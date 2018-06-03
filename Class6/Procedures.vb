@@ -21,19 +21,24 @@
         Tax = TxtTax.Text
         Net = Gross - Gross * Tax
         TxtNet.Text = Net
-
-
-
     End Sub
     'Calling the procedure compute Net
     Private Sub BtnNetPay_Click(sender As System.Object, e As System.EventArgs) Handles BtnNetPay.Click
-
+        Button1.Visible = False
 
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
         Me.Hide()
         Form2.Show()
+
+    End Sub
+
+    Private Function getButton1() As Button
+        Return Button1
+    End Function
+
+    Private Sub Procedures_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

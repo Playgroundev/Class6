@@ -15,10 +15,6 @@
             Sum = Sum + Num
             LstLoops.Items.Add(Num & vbTab & Sum)
         Next
-
-
-
-
     End Sub
 
     Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click

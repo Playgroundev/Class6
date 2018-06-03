@@ -23,24 +23,24 @@ Partial Class Procedures
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TxtAssgn = New System.Windows.Forms.TextBox()
-        Me.TxtCAT = New System.Windows.Forms.TextBox()
-        Me.TxtExam = New System.Windows.Forms.TextBox()
-        Me.TxtTotal = New System.Windows.Forms.TextBox()
-        Me.BtnComputeTotal = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TxtGrossPay = New System.Windows.Forms.TextBox()
-        Me.TxtTax = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TxtNet = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.BtnNetPay = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnComputeTotal = New System.Windows.Forms.Button()
+        Me.TxtTotal = New System.Windows.Forms.TextBox()
+        Me.TxtExam = New System.Windows.Forms.TextBox()
+        Me.TxtCAT = New System.Windows.Forms.TextBox()
+        Me.TxtAssgn = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.BtnNetPay = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TxtNet = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TxtTax = New System.Windows.Forms.TextBox()
+        Me.TxtGrossPay = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -64,32 +64,51 @@ Partial Class Procedures
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Compile Marks"
         '
-        'Label1
+        'Button1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(36, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Assgn"
+        Me.Button1.Location = New System.Drawing.Point(14, 180)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 9
+        Me.Button1.Text = "Next"
+        Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label2
+        'BtnComputeTotal
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(15, 44)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(28, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "CAT"
+        Me.BtnComputeTotal.Location = New System.Drawing.Point(18, 142)
+        Me.BtnComputeTotal.Name = "BtnComputeTotal"
+        Me.BtnComputeTotal.Size = New System.Drawing.Size(123, 23)
+        Me.BtnComputeTotal.TabIndex = 8
+        Me.BtnComputeTotal.Text = "Compute Total"
+        Me.BtnComputeTotal.UseVisualStyleBackColor = True
         '
-        'Label3
+        'TxtTotal
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 67)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(33, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Exam"
+        Me.TxtTotal.Location = New System.Drawing.Point(50, 94)
+        Me.TxtTotal.Name = "TxtTotal"
+        Me.TxtTotal.Size = New System.Drawing.Size(100, 20)
+        Me.TxtTotal.TabIndex = 7
+        '
+        'TxtExam
+        '
+        Me.TxtExam.Location = New System.Drawing.Point(50, 64)
+        Me.TxtExam.Name = "TxtExam"
+        Me.TxtExam.Size = New System.Drawing.Size(100, 20)
+        Me.TxtExam.TabIndex = 6
+        '
+        'TxtCAT
+        '
+        Me.TxtCAT.Location = New System.Drawing.Point(50, 37)
+        Me.TxtCAT.Name = "TxtCAT"
+        Me.TxtCAT.Size = New System.Drawing.Size(100, 20)
+        Me.TxtCAT.TabIndex = 5
+        '
+        'TxtAssgn
+        '
+        Me.TxtAssgn.Location = New System.Drawing.Point(50, 12)
+        Me.TxtAssgn.Name = "TxtAssgn"
+        Me.TxtAssgn.Size = New System.Drawing.Size(100, 20)
+        Me.TxtAssgn.TabIndex = 4
         '
         'Label4
         '
@@ -100,42 +119,32 @@ Partial Class Procedures
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Total"
         '
-        'TxtAssgn
+        'Label3
         '
-        Me.TxtAssgn.Location = New System.Drawing.Point(50, 12)
-        Me.TxtAssgn.Name = "TxtAssgn"
-        Me.TxtAssgn.Size = New System.Drawing.Size(100, 20)
-        Me.TxtAssgn.TabIndex = 4
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(11, 67)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(33, 13)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Exam"
         '
-        'TxtCAT
+        'Label2
         '
-        Me.TxtCAT.Location = New System.Drawing.Point(50, 37)
-        Me.TxtCAT.Name = "TxtCAT"
-        Me.TxtCAT.Size = New System.Drawing.Size(100, 20)
-        Me.TxtCAT.TabIndex = 5
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(15, 44)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(28, 13)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "CAT"
         '
-        'TxtExam
+        'Label1
         '
-        Me.TxtExam.Location = New System.Drawing.Point(50, 64)
-        Me.TxtExam.Name = "TxtExam"
-        Me.TxtExam.Size = New System.Drawing.Size(100, 20)
-        Me.TxtExam.TabIndex = 6
-        '
-        'TxtTotal
-        '
-        Me.TxtTotal.Location = New System.Drawing.Point(50, 94)
-        Me.TxtTotal.Name = "TxtTotal"
-        Me.TxtTotal.Size = New System.Drawing.Size(100, 20)
-        Me.TxtTotal.TabIndex = 7
-        '
-        'BtnComputeTotal
-        '
-        Me.BtnComputeTotal.Location = New System.Drawing.Point(18, 142)
-        Me.BtnComputeTotal.Name = "BtnComputeTotal"
-        Me.BtnComputeTotal.Size = New System.Drawing.Size(123, 23)
-        Me.BtnComputeTotal.TabIndex = 8
-        Me.BtnComputeTotal.Text = "Compute Total"
-        Me.BtnComputeTotal.UseVisualStyleBackColor = True
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(7, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(36, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Assgn"
         '
         'GroupBox2
         '
@@ -153,44 +162,14 @@ Partial Class Procedures
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "NetPay"
         '
-        'TxtGrossPay
+        'BtnNetPay
         '
-        Me.TxtGrossPay.Location = New System.Drawing.Point(78, 30)
-        Me.TxtGrossPay.Name = "TxtGrossPay"
-        Me.TxtGrossPay.Size = New System.Drawing.Size(100, 20)
-        Me.TxtGrossPay.TabIndex = 0
-        '
-        'TxtTax
-        '
-        Me.TxtTax.Location = New System.Drawing.Point(78, 77)
-        Me.TxtTax.Name = "TxtTax"
-        Me.TxtTax.Size = New System.Drawing.Size(100, 20)
-        Me.TxtTax.TabIndex = 1
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(7, 37)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(52, 13)
-        Me.Label5.TabIndex = 2
-        Me.Label5.Text = "GrossPay"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(10, 80)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(25, 13)
-        Me.Label6.TabIndex = 3
-        Me.Label6.Text = "Tax"
-        '
-        'TxtNet
-        '
-        Me.TxtNet.Location = New System.Drawing.Point(78, 115)
-        Me.TxtNet.Name = "TxtNet"
-        Me.TxtNet.Size = New System.Drawing.Size(100, 20)
-        Me.TxtNet.TabIndex = 5
+        Me.BtnNetPay.Location = New System.Drawing.Point(55, 164)
+        Me.BtnNetPay.Name = "BtnNetPay"
+        Me.BtnNetPay.Size = New System.Drawing.Size(75, 23)
+        Me.BtnNetPay.TabIndex = 7
+        Me.BtnNetPay.Text = "Net Pay"
+        Me.BtnNetPay.UseVisualStyleBackColor = True
         '
         'Label7
         '
@@ -201,23 +180,44 @@ Partial Class Procedures
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Net"
         '
-        'BtnNetPay
+        'TxtNet
         '
-        Me.BtnNetPay.Location = New System.Drawing.Point(55, 164)
-        Me.BtnNetPay.Name = "BtnNetPay"
-        Me.BtnNetPay.Size = New System.Drawing.Size(75, 23)
-        Me.BtnNetPay.TabIndex = 7
-        Me.BtnNetPay.Text = "Net Pay"
-        Me.BtnNetPay.UseVisualStyleBackColor = True
+        Me.TxtNet.Location = New System.Drawing.Point(78, 115)
+        Me.TxtNet.Name = "TxtNet"
+        Me.TxtNet.Size = New System.Drawing.Size(100, 20)
+        Me.TxtNet.TabIndex = 5
         '
-        'Button1
+        'Label6
         '
-        Me.Button1.Location = New System.Drawing.Point(14, 180)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Next"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(10, 80)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(25, 13)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "Tax"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(7, 37)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(52, 13)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "GrossPay"
+        '
+        'TxtTax
+        '
+        Me.TxtTax.Location = New System.Drawing.Point(78, 77)
+        Me.TxtTax.Name = "TxtTax"
+        Me.TxtTax.Size = New System.Drawing.Size(100, 20)
+        Me.TxtTax.TabIndex = 1
+        '
+        'TxtGrossPay
+        '
+        Me.TxtGrossPay.Location = New System.Drawing.Point(78, 30)
+        Me.TxtGrossPay.Name = "TxtGrossPay"
+        Me.TxtGrossPay.Size = New System.Drawing.Size(100, 20)
+        Me.TxtGrossPay.TabIndex = 0
         '
         'Procedures
         '
